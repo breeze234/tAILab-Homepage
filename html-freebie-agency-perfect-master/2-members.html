@@ -25,7 +25,7 @@
     <!-- Favicon
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x16" href="assets/img/logo_tai.png">
 
     <!-- Stylesheets
     ================================================== -->
@@ -43,8 +43,7 @@
     <![endif]-->
 
 </head>
-<body>
-
+<body class="home-page">
     <header id="masthead" class="site-header">
         <nav id="primary-navigation" class="site-navigation">
             <div class="container">
@@ -54,22 +53,49 @@
     
                 <div class="collapse navbar-collapse" id="agency-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html" data-toggle="dropdown">Home</a></li>
+                        <!-- Home Link -->
+                        <li class="active"><a href="index.html">Home</a></li>
     
                         <!-- Members Dropdown Menu -->
-                        <li class="dropdown"><a href="2-members.html" class="dropdown-toggle" data-toggle="dropdown">Members<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                        <li class="dropdown">
+                            <a href="2-members.html#professors" class="dropdown-toggle" data-toggle="dropdown">Members<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                                <li><a href="members.html#professors">Professor</a></li>
-                                <li><a href="members.html#students">Student</a></li>
-                                <li><a href="members.html#alumni">Alumni</a></li>
+                                <li><a href="2-members.html#professors">Professor</a></li>
+                                <li><a href="2-members.html#students">Student</a></li>
+                                <li><a href="2-members.html#alumni">Alumni</a></li>
                             </ul>
                         </li>
     
-                        <!-- Updated Categories -->
+                        <!-- Research Link -->
                         <li><a href="3-research.html">Research</a></li>
-                        <li><a href="4-publications.html">Publications</a></li>
+    
+                        <!-- Publications Dropdown Menu -->
+                        <li class="dropdown">
+                            <a href="4-publications.html" class="dropdown-toggle" data-toggle="dropdown">Publications<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu2">
+                                <li><a href="4-publications.html#international-journal">International Journal</a></li>
+                                <li><a href="4-publications.html#domestic-journal">Domestic Journal</a></li>
+                                <li><a href="4-publications.html#international-conference">International Conference</a></li>
+                                <li><a href="4-publications.html#domestic-conference">Domestic Conference</a></li>
+                                <li><a href="4-publications.html#preprint">Preprint & Under Review</a></li>
+                                <li><a href="4-publications.html#book">Book</a></li>
+                            </ul>
+                        </li>
+    
+                        <!-- Projects Link -->
                         <li><a href="5-projects.html">Projects</a></li>
-                        <li><a href="6-board.html">Board</a></li>
+    
+                        <!-- Board Dropdown Menu -->
+                        <li class="dropdown">
+                            <a href="6-board.html" class="dropdown-toggle" data-toggle="dropdown">Board<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu3">
+                                <li><a href="6-board.html#news">News</a></li>
+                                <li><a href="6-board.html#seminar">Seminar</a></li>
+                                <li><a href="6-board.html#photo">Photo</a></li>
+                            </ul>
+                        </li>
+    
+                        <!-- Contact Link -->
                         <li><a href="7-contact.html">Contact</a></li>
                     </ul>
                 </div>
@@ -77,7 +103,7 @@
         </nav><!-- /.site-navigation -->
     </header><!-- /#masthead -->
 
-    <div class="container">
+    <div class="container-fluid">
 
         <section id="professor" class="members-section">
             <div class="container">
@@ -165,5 +191,498 @@
             </div>
         </section>
     
+    <section id="students" class="members-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Students</h2>
+                <p class="section-subtitle">MEMBERS</p>
+            </div>
+    
+            <!-- Ph.D. Candidates Section -->
+            <div class="student-category">
+                <h3 class="category-title">Ph.D. Students</h3>
+                <hr>
+    
+                <!-- Ph.D. Student 1 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Soo Kyung Bae" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>배수경(Soo Kyung Bae)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@yonsei.ac.kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>AI</td>
+                                </tr>
+                                <tr>
+                                    <td>M.S.:</td>
+                                    <td>Statistics, University of Waterloo, Waterloo, Canada</td>
+                                </tr>
+                                <tr>
+                                    <td>M.S.:</td>
+                                    <td>Applied Statistical Modeling and Health Informatics,
+                                        King’s College London, London, UK</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Ph.D. Student 2 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Hyundo Jung" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>정현도(Hyundo Jung)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@yonsei.ac.kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>DEEP LEARNING</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>Computer Engineering, University of Illinois at Urbana-Champaign,2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
+                <!-- Ph.D. Student 3 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Taeyun Park" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>박태윤(Taeyun Park)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@yonsei.ac.kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>DEEP LEARNING</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>Computer Science, St. Lawrence University, 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Ph.D. Student 4 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Yewon Choi" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>최예원(Yewon Choi)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@yonsei.ac.kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>DEEP LEARNING</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>ddd, ddd University, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Ph.D. Student 5 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Changdai Gu" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>구창대(Changdai Gu)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@yonsei.ac.kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>DEEP LEARNING</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>ddd, ddd University, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- M.S. Students Section -->
+            <div class="student-category">
+                <h3 class="category-title">M.S. Students</h3>
+                <hr>
+    
+                <!-- M.S. Student 1 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Junho Hong" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>홍준호(Junho Hong)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@yonsei.ac.kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>Deep Learning</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>ddd, ddd, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- M.S. Student 2 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Soojung Choi" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>최수정(Soojung Choi)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>crystal64@yonsei.ac.kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>Deep Learning</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>Department of Health and Human Performance, Dongduk Women's University, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>Data Science Major, Dongduk Women's University, 2024</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>September, 2024</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intern Section -->
+            <div class="student-category">
+                <h3 class="category-title">Interns</h3>
+                <hr>
+
+                <!-- Intern 1 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Jiwoo Lee" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>문지우(Jiwoo Moon)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>Deep Learning</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>ddd, ddd, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>September 1, 2019</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intern 2 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Minseo Yu" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>유민서(Minseo Yoo)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>Deep Learning</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>ddd, ddd, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>September 1, 2019</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intern 3 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Chaekyung Lee" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>이채경(Chaekyung Lee)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>Deep Learning</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>ddd, ddd, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>September 1, 2019</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Intern 4 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Soeun Kim" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>김소은(Soeun Kim)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>ddd@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Area of Interests:</td>
+                                    <td>Deep Learning</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.:</td>
+                                    <td>ddd, ddd, 2022</td>
+                                </tr>
+                                <tr>
+                                    <td>Admission:</td>
+                                    <td>September 1, 2019</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="alumni" class="members-section">
+        <div class="container">
+            <h2 class="section-title">Alumni</h2>
+            <p class="subheading-text">Our Alumni who have made significant contributions to our lab</p>
+            
+            <!-- Ph.D. Candidates Section -->
+            <div class="student-category">
+                <h3 class="category-title">Ph.D.</h3>
+                <hr>
+
+                <!-- Ph.D. Student 1 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Sangwouk Cho" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>조상욱(Sangwouk Cho)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Current</td>
+                                    <td>Yonsei University</td>
+                                </tr>
+                                <tr>
+                                    <td>M.S.</td>
+                                    <td>Dept of Information Management , Peking University,</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.</td>
+                                    <td>Dept of Information Management , Peking University,</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduation:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- M.S. Candidates Section -->
+            <div class="student-category">
+                <h3 class="category-title">M.S.</h3>
+                <hr>
+
+                <!-- M.S. Student 1 -->
+                <div class="student-profile">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-4">
+                            <img src="assets/img/students/person_photo_resize.jpg" alt="Sooho Ahn" class="student-image img-responsive">
+                        </div>
+                        <div class="col-md-9 col-sm-8">
+                            <h4>안수호(Sooho Ahn)</h4>
+                            <table class="student-info">
+                                <tr>
+                                    <td>Current</td>
+                                    <td>Yonsei University</td>
+                                </tr>
+                                <tr>
+                                    <td>M.S.</td>
+                                    <td>Dept of Information Management , Peking University,</td>
+                                </tr>
+                                <tr>
+                                    <td>B.S.</td>
+                                    <td>Software Engineering, Tsinghua University, 2021</td>
+                                </tr>
+                                <tr>
+                                    <td>Graduation:</td>
+                                    <td>March, 2022</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+    
+    
+    <footer id="colophon" class="site-footer" style="background: url('assets/img/footer_img_blue_wave.png') no-repeat center center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <!-- Left Section: Logo and Description -->
+                <div class="col-md-6 col-sm-12 logo-section text-center">
+                    <div class="lab-info">
+                        <img src="assets/img/logo.png" alt="tAILab Logo" class="footer-logo">
+                        <div>
+                            <p> Translational AI Lab.<br>
+                                College of Medicine, <br>
+                                Yonsei University
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Right Section: Contact Us -->
+                <div class="col-md-6 col-sm-12 contact-section text-center">
+                    <h3>Contact Us</h3>
+                    <ul class="list-unstyled contact-links">
+                        <li>
+                            <div class="location-info">
+                                <span>김휘영 교수 (<a href="mailto:hykim82@yuhs.ac">hykim82@yuhs.ac</a>)</span><br>
+                                서울특별시 서대문구 연세로 50-1, 연세대학교 의과대학 신관 609호
+                            </div>
+                        </li>
+                        <li>
+                            <div class="location-info">
+                                <span>대학원 연구실 (Lab manager: <a href="mailto:ygj3084@gmail.com">ygj3084@gmail.com</a>)</span><br>
+                                서울특별시 서대문구 연세로 50-1, 디지털헬스센터
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap-select.min.js"></script>
+        <script src="assets/js/jquery.slicknav.min.js"></script>
+        <script src="assets/js/jquery.countTo.min.js"></script>
+        <script src="assets/js/jquery.shuffle.min.js"></script>
+        <script src="assets/js/script.js"></script>
+      
     </body>
     </html>

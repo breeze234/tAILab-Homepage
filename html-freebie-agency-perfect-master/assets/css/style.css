@@ -638,15 +638,30 @@ html, body {
 .mt-20 {margin-top: 20px;}
 .mt-50 {margin-top: 50px;}
 
-/* HEADER
-================================================== */
-.site-header {
-    position: absolute;
-    padding: 50px 0 0;
-    background-color: transparent;
-    width: 100%;
-    z-index: 3;
+/* HEADER - 메인 페이지에서 사용 (투명 헤더) */
+.home-page .site-header {
+    position: fixed; /* 헤더를 고정 */
+    top: 0; /* 상단에 고정 */
+    left: 0; /* 왼쪽 끝에 고정 */
+    width: 100%; /* 전체 너비 사용 */
+    background-color: transparent; /* 메인 페이지에서 투명 */
+    z-index: 1000; /* 헤더가 다른 요소들 위에 있도록 설정 */
+    box-shadow: none; /* 그림자 제거 */
+    padding: 50px 0 0; /* 기존의 패딩 유지 */
 }
+
+/* HEADER - 다른 페이지에서 사용 (흰색 배경) */
+body:not(.home-page) .site-header {
+    position: fixed; /* 헤더를 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* 흰색 배경 */
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    padding: 20px 0; /* 패딩을 줄여서 헤더 높이를 키움 */
+}
+
 
 /* Site-logo */
 .site-title {
@@ -888,9 +903,24 @@ html, body {
 /* SITEMAIN
 ================================================== */
 /* site-section */
+
+/* 섹션의 기본 상태 */
 .site-section {
-   padding: 100px 0 140px;
+    opacity: 0;
+    transform: translateY(30px); /* 아래에서 위로 올라오는 효과 */
+    transition: all 1s ease-in-out; /* 애니메이션 지속 시간과 효과 */
 }
+
+/* 보이기 시작할 때 효과 적용 */
+.site-section.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* .site-section {
+   padding: 100px 0 140px;
+} */
 
 .subheading-text {
     font-size: 20px;
@@ -992,9 +1022,15 @@ html, body {
 }
 
 
-/* Section: Services */
-.section-services .subheading-text {
-    margin-bottom: 90px;
+/* Section: Research Interest - 추가된 여백 설정 */
+.section-services {
+    padding-top: 100px; /* 상단 패딩을 기존보다 더 크게 설정 */
+    padding-bottom: 60px; /* 하단 패딩도 적절히 설정 */
+    background-color: #f9f9f9; /* 예시로 배경색도 조금 다르게 설정 가능 */
+}
+
+.section-services .heading-separator {
+    margin-top: 40px; /* 제목 위에 추가 여백을 설정 */
 }
 
 .section-services .col-md-3:nth-child(n+5) .service {
@@ -1168,10 +1204,24 @@ html, body {
 /* FOOTER
 ================================================== */
 .site-footer {
-    background: url(assets/img/footer_img_blue_wave.png) no-repeat center center; /* 이미지 배경 설정 */
-    background-size: cover; /* 이미지를 전체 크기에 맞게 조정 */
-    padding-top: 95px;
-    background-color: #f5f5f8; /* 배경색을 함께 설정해 대비가 생기도록 함 */
+    background: url(assets/img/footer_img_blue_wave.png) no-repeat center center;
+    background-size: cover;
+    padding-top: 50px; /* 줄여서 여백을 조정 */
+    padding-bottom: 20px; /* 줄여서 아래 여백을 최소화 */
+    background-color: #f5f5f8; /* 배경색 설정 */
+}
+
+/* 로고와 텍스트를 수직으로 가운데 정렬 */
+.lab-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
 }
 
 .site-footer .site-title {
@@ -1180,13 +1230,43 @@ html, body {
 }
 
 .site-footer h3 {
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
-    margin:0 0 40px;
+    margin-bottom: 20px;
 }
 
-.site-footer > .container {
-    padding-bottom: 170px;
+/* 오른쪽 섹션 텍스트 여백 조정 */
+.site-footer .contact-links li {
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: left; /* 왼쪽 정렬 유지 */
+}
+
+.site-footer .contact-links li i {
+    margin-right: 15px;
+    margin-top: 4px;
+}
+.location-info {
+    margin-left: 5px; /* 여백 조정하여 텍스트와 아이콘이 겹치지 않게 함 */
+}
+
+.logo-section, .contact-section {
+    margin-bottom: 20px; /* 섹션 간의 여백 조정 */
+}
+
+/* 이메일 링크 스타일링 */
+.site-footer .contact-links li a {
+    color: #000; /* 이메일 링크를 검정색으로 설정 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.site-footer .contact-links li a:hover {
+    color: #6fc754; /* 마우스를 올렸을 때 다른 색으로 강조 */
+}
+
+.site-footer .container {
+    padding-bottom: 50px; /* 기존의 큰 여백을 줄여서 더 간결하게 */
 }
 
 .site-footer .list-unstyled li + li {
@@ -1234,8 +1314,18 @@ html, body {
 
 /* Copyright */
 .copyright {
-    padding: 30px 0;
-    border-top: 1px solid rgba(38, 41, 44, 0.05);
+    padding: 15px 0; /* 상하 패딩 설정 */
+    background-color: rgba(0, 0, 0, 0.5); /* 반투명한 배경 */
+    color: #fff; /* 텍스트 색상 흰색 */
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* 상단 경계선 추가 */
+}
+
+.copyright p {
+    margin: 0;
+    padding: 5px;
+    font-weight: 400;
 }
 
 .social-links a {
